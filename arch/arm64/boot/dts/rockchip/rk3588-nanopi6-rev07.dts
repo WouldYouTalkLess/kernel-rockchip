@@ -32,3 +32,12 @@
 &u2phy3_host {
 	phy-supply = <&vcc5v0_host_20>;
 };
+&usbdrd_dwc3_0 {
+        dr_mode = "otg";
+        role-switch-default-mode = "peripheral";
+};
+
+&usb_con {
+        data-role = "device";
+        power-role = "sink";
+};
